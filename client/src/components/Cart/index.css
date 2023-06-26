@@ -1,0 +1,11 @@
+.cart-container {
+  height: 100vh;
+}
+.cart-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.image-cart {
+  height: 100px;
+}

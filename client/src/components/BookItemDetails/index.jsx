@@ -57,7 +57,7 @@ const BookItemDetails = () => {
           <p className="bold">Description:</p>
           <p>{description}</p>
           <div>
-            <Link to="/cart">
+            <Link to={`/cart/${id}`}>
               <button className="btn btn-primary">place order</button>
             </Link>
           </div>
