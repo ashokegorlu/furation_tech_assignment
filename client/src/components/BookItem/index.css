@@ -1,0 +1,13 @@
+.list {
+  max-height: 300px;
+  min-width: 150px;
+  max-width: 200px;
+  padding: 3px;
+  list-style-type: none;
+}
+.image {
+  height: 160px;
+}
+.rate {
+  font-weight: 900;
+}

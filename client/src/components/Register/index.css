@@ -1,0 +1,30 @@
+.main-container {
+  height: 100vh;
+  background-size: cover;
+  border: 1px solid red;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+.image-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+}
+.registration-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+}
+.bookstore-image {
+  height: 370px;
+  border-radius: 10px;
+}
+span {
+  font-size: 12px;
+  font-weight: 900;
+}

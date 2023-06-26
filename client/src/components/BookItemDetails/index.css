@@ -1,0 +1,23 @@
+.book-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.each-book-container {
+  height: 80vh;
+  padding-left: 200px;
+  padding-right: 200px;
+  display: flex;
+}
+.book-details {
+  height: 50%;
+  margin: 10px;
+}
+.book-image {
+  height: 400px;
+  width: 350px;
+  border-radius: 10px;
+}
+.bold {
+  font-weight: 900;
+}
