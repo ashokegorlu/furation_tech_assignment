@@ -85,7 +85,7 @@ const Login = (props) => {
           <Link to="/">ForgetPassword</Link>
           <div className="text-center">
             <button className="btn btn-primary" type="submit">
-              Login
+              submit
             </button>
           </div>
           {showSubmitError && <p className="text-danger">*{errorMsg}</p>}
