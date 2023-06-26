@@ -4,6 +4,11 @@
 Fu Bookstore is a web application built using Node.js, Express.js, and React.js. It utilizes SQLite for user authentication and book storage. 
 This application allows users to browse and purchase books online.
 
+## photo 
+![Fu Book Store](![Screenshot 2023-06-26 214031](https://github.com/ashokegorlu/furation_tech_assignment/assets/126849790/66e2ccf9-c836-40c4-b086-eaf176e26b40))
+
+
+
 ## Features
 
 - User authentication: Users can sign up, log in, and log out.
