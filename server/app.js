@@ -118,3 +118,12 @@ app.get("/books/:bookId", authentication, async (req, res) => {
   const getBook = await db.get(getBookQuery);
   res.send(getBook);
 });
+
+app.get("/cart/:cartId", authentication, async (req, res) => {
+  const { cartId } = req.params;
+  const getBookQuery = `
+    SELECT * FROM book WHERE id=${cartId}
+    `;
+  const getBook = await db.get(getBookQuery);
+  res.send(getBook);
+});

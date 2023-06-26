@@ -12,6 +12,7 @@ import { useParams } from "react-router-dom";
 const BookItemDetails = () => {
   const [bookData, setBookData] = useState([]);
   const [isLoading, SetIsLoading] = useState(true);
+  const [isClick, setIsClick] = useState(false);
 
   const jwtToken = Cookies.get("jwt_token");
   if (jwtToken === undefined) {
@@ -43,7 +44,7 @@ const BookItemDetails = () => {
   console.log(bookData);
 
   const eachBookDetail = () => {
-    const { title, img_link, author, description } = bookData;
+    const { id, title, img_link, author, description } = bookData;
 
     return (
       <div className="each-book-container">
@@ -56,9 +57,15 @@ const BookItemDetails = () => {
           <p className="details-author-name">{author}</p>
           <p className="bold">Description:</p>
           <p>{description}</p>
+
           <div>
-            <Link to="/cart">
-              <button className="btn btn-primary">place order</button>
+            <Link to={`/cart/${id}`}>
+              <button
+                className="btn btn-primary"
+                onClick={() => setIsClick((prev) => !prev)}
+              >
+                place order
+              </button>
             </Link>
           </div>
         </div>
